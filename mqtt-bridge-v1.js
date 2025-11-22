@@ -12,9 +12,9 @@
  * Usage:
  *   node mqtt-bridge-v1.js "https://www.tinkercad.com/things/<YourCircuit>" [broker=localhost] [port=1883]
  *
- * MQTT Topics:
- *  Accept all topics from Tinkercad
- *  Limited topic to send to Tinkercad only can be used for sensor/command
+* MQTT Behavior:
+ *  - From Tinkercad → MQTT: Publishes ALL topics detected in serial output
+ *  - From MQTT → Tinkercad: Only messages from "sensor/command" are injected into Serial Monitor
  *
  * ©2025rahmadsadli. All rights reserved.
  */
